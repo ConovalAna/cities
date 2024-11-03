@@ -1,9 +1,10 @@
 import Link from "next/link";
 import React from "react";
+import styles from "../styles/navbar.module.css";
 
 export default function Navbar() {
   return (
-    <nav className="nav-bar">
+    <nav className={styles.navBar}>
       <div>
         <Link href="/" id="home">
           Home

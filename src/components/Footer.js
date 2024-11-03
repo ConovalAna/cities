@@ -1,22 +1,23 @@
 import Link from "next/link";
 import React from "react";
+import style from "../styles/footer.module.css";
 
 export default function Footer() {
   return (
-    <nav className="footer">
+    <nav className={style.footer}>
       <div>
         <ul>
+          <li>
+            <Link href="/" id="homr">
+              Home
+            </Link>
+          </li>
           <li>
             <Link href="/search" id="search">
               Search
             </Link>
           </li>
-          <li>
-            <Link href="/favorites" id="favorites">
-              Favorites
-            </Link>
-          </li>
-          <li>Copy rights 2024</li>
+          <li>Copyright © 2024</li>
         </ul>
       </div>
     </nav>
